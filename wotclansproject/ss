@@ -1,0 +1,3 @@
+ALTER ROLE maciekpsql SET client_encoding TO 'utf8';
+ALTER ROLE maciekpsql SET default_transaction_isolation TO 'read committed';
+ALTER ROLE maciekpsql SET timezone TO 'UTC';
