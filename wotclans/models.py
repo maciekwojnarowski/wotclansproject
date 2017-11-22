@@ -3,7 +3,7 @@ from django.db import models
 
 
 class Clan(models.Model):
-    full_name = models.CharField(max_length=50)
+    full_name = models.CharField(max_length=80)
     tag = models.CharField(max_length=5)
     motto = models.CharField(max_length=50, default='')
     clan_id = models.PositiveIntegerField()
