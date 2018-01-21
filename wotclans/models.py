@@ -1,5 +1,6 @@
 # from django.contrib.postgres.fields import JSONField
 from django.db import models
+from django.contrib.auth.models import User
 
 
 class Clan(models.Model):
@@ -36,5 +37,12 @@ class Player(models.Model):
     statistics_skirmishes = models.TextField(default='')
     statistics_sh_defense = models.TextField(default='')
 
+
+class Logo(models.Model):
+    clan_id = models.ForeignKey(Clan, on_delete=models.CASCADE)
+    tag = models.CharField(max_length=5)
+    logo_big = models.ImageField(upload_to='logos/')
+    logo_small = models.ImageField(upload_to='logos/')
+    updated_at = models.DateTimeField(null=True)
 
 
