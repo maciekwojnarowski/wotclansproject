@@ -19,7 +19,7 @@
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://91.196.49.23/django_wotclans_dev</jdbc-url>
+      <jdbc-url>jdbc:postgresql://80.211.240.29/wotclans_dev</jdbc-url>
       <libraries>
         <library>
           <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/postgresql-driver-license.txt</url>

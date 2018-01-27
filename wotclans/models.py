@@ -41,8 +41,8 @@ class Player(models.Model):
 class Logo(models.Model):
     clan_id = models.ForeignKey(Clan, on_delete=models.CASCADE)
     tag = models.CharField(max_length=5)
-    logo_big = models.ImageField(upload_to='logos/')
-    logo_small = models.ImageField(upload_to='logos/')
+    logo_big = models.ImageField(upload_to='big/')
+    logo_small = models.ImageField(upload_to='small/')
     updated_at = models.DateTimeField(null=True)
 
 
