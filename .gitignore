@@ -102,5 +102,4 @@ db.sqlite3
 wotclans/__pycache__/
 wotclans/migrations/__pycache__/
 wotclansproject/__pycache__/
-wotclansproject/settings.py
 
