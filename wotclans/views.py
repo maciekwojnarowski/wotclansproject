@@ -12,9 +12,9 @@ class HomeView(View):
                                         INNER JOIN (
                                           SELECT clan_id, max(updated_at) maxupdated
                                           FROM wotclans_clan
-                                          GROUP BY clan_id LIMIT 1000
+                                          GROUP BY clan_id LIMIT 2000
                                           ) b ON a.clan_id = b.clan_id AND a.updated_at = b.maxupdated) w
                                       INNER JOIN wotclans_logo l 
                                       ON w.tag = l.tag
-                                      ORDER BY "elo_gm_X" DESC''')
-        return render(request, 'home.html', {'clans': clans[:100], })
+                                      ORDER BY "elo_sh_X" DESC''')
+        return render(request, 'home.html', {'clans': clans[:200], })

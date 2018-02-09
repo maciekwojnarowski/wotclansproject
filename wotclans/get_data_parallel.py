@@ -90,7 +90,7 @@ def get_data(i):
 
 
 clans_json = 'https://api.worldoftanks.eu/wgn/clans/list/?application_id=58e1edcfb25f7033d5427a6918c5c7f1&page_no='
-# TODO: seems like this api call returns top clans first. maybe get only top 2000 clans?
+# TODO: seems like this api call returns top clans first.
 print('Starting main loop')
 start = time.time()
 for page_no in range(1, 10):  # TODO: change it back to 1,20
